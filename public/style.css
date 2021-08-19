@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.card-header {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.card-title {
+    color: white;
+}
+
+.cardtext {
+    background-color: darkgray;
+}

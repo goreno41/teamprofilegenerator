@@ -11,7 +11,7 @@ const teamArray = [];
 //..team manager’s name, employee ID, email address, and office number
 
 const teamManager = () => {
-    inquirer.prompt([
+    return inquirer.prompt([
       {
         type: "input",
         message: "What is the team manager's name?",
@@ -45,7 +45,7 @@ const teamManager = () => {
 
 const employeeAdd = () => {
 
-    inquirer.prompt([
+    return inquirer.prompt([
 
         {
           type: "list",
@@ -116,10 +116,10 @@ const employeeAdd = () => {
 
 
         if (role === "Intern") {
-          employee = new Intern(name, employeeID, email, school);
+          employee = new Intern(name, id, email, school);
 
         } else if (role === "Engineer") {
-          employee = new Engineer(name, employeeID, email, gitHub);
+          employee = new Engineer(name, id, email, gitHub);
         }
         teamArray.push(employee);
 
